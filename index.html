@@ -1,1 +1,51 @@
-Hello World
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+    <script>
+    function remove(str, nstr) {
+        document.getElementById(str).classList.add('active');        
+        document.getElementById(nstr).classList.remove('active');        
+    }
+
+</script>
+</head>
+
+
+<body>
+<div class="topnav">
+  <a id = "d" class="active" href="#download" onclick = "remove('d','a')"> Download</a>
+  <a id = "a" href="#about" onclick = "remove('a','d')">About</a>
+</div>
+
+<div id = "download">
+    <div class = "logo">
+        <img src = "gmanim_logo.png" width = "433" height = "250">
+        <p align = center style = "color:white;font-size:55px;">Gmanim</p>
+    </div>
+
+    <a href="gmanim_app.png" download>
+        <img src="gmanim_app.png" alt="W3Schools" width="104" height="142">
+    </a>
+
+    <div>
+        <a download href="gmanim_app.png">Download Beta</a>
+    </div>
+
+</div>
+
+
+<div id = "about>
+
+    <p class = "para"> Graphical Manim, or Gmanim, is a frontend abstraction to Manim. It can be used to create animated math, physics, and STEM explanatory videos. No programming experience is required! You can checkout example projects over 
+        <a style = "color:blue" href="https://www.youtube.com/channel/UCjwnICu8FFses0FTQYDgzlw"> here.</a>
+    </p>
+    <br>
+    <p class = "para"> Currently, Gmanim is released as a public beta, but is only supported on macOS Mojave and higher. Special thanks to 3Blue1Brown, the original creator of Manim! However, do note that 3Blue1Brown is not affiliated with and does not explicitly endorse this product. </p>
+</div>
+
+</body>
+
+
+
+</html>

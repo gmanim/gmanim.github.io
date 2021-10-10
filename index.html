@@ -14,33 +14,40 @@
 
 <body>
 <div class="topnav">
-  <a id = "d" class="active" href="#download" onclick = "remove('d','a')"> Download</a>
+  <a id = "d" class="active" href="#down" onclick = "remove('d','a')"> Download</a>
   <a id = "a" href="#about" onclick = "remove('a','d')">About</a>
 </div>
+<br>
+<br>
+<br>
+<br>
 
-<div id = "download">
+<div class = "download" id = "down">
     <div class = "logo">
-        <img src = "gmanim_logo.png" width = "433" height = "250">
-        <p align = center style = "color:white;font-size:55px;">Gmanim</p>
+        <img src = "gmanim_logo.png" width = "866" height = "500">
+        <p align = center style = "color:white;font-size:75px;margin:0 -5px;">Gmanim</p>
     </div>
 
-    <a href="gmanim_app.png" download>
-        <img src="gmanim_app.png" alt="W3Schools" width="104" height="142">
-    </a>
-
-    <div>
-        <a download href="gmanim_app.png">Download Beta</a>
+    <div class = "logo">
+        <a class="downloadB" download = "gmanimapp.png" href="gmanim_app.png">Download Beta</a>
+        <p class = "para">(macOS 10.14 and above)</p>
     </div>
 
 </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<hr>
 
-
-<div id = "about>
-
+<div id = "about" class = "about">
+    <p style = "color:white;font-size:55px;"> About </p>
     <p class = "para"> Graphical Manim, or Gmanim, is a frontend abstraction to Manim. It can be used to create animated math, physics, and STEM explanatory videos. No programming experience is required! You can checkout example projects over 
-        <a style = "color:blue" href="https://www.youtube.com/channel/UCjwnICu8FFses0FTQYDgzlw"> here.</a>
+        <a style = "color:#167FA3" href="https://www.youtube.com/channel/UCjwnICu8FFses0FTQYDgzlw"> here.</a>
     </p>
-    <br>
     <p class = "para"> Currently, Gmanim is released as a public beta, but is only supported on macOS Mojave and higher. Special thanks to 3Blue1Brown, the original creator of Manim! However, do note that 3Blue1Brown is not affiliated with and does not explicitly endorse this product. </p>
 </div>
 

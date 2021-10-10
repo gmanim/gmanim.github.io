@@ -2,7 +2,6 @@ body {background-color: #242E40;}
 
 /* Add a black background color to the top navigation */
 .topnav {
-//  background-color: #333;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -38,14 +37,47 @@ body {background-color: #242E40;}
   font-family: "Times New Roman"
 }
 
-
-.logo {
-    display: table-cell;
-vertical-align: middle;
+.download {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 100px;
 }
 
-.about p {
-  color: white
-  text-align: center
-  max-width: 200px
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+    margin-left: 40px
+}
+
+.downloadB {
+  background-color: #167FA3;
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 35px;
+  font-family: "Times New Roman"
+
+}
+.downloadB:hover {
+  background-color: #268FB3;
+  color: #f2f2f2;
+}
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.para {
+  font-size: 25px;
+  font-family: "Verdana";
+  color: white;
+  text-align: center;
+  max-width: 500px;
 }
